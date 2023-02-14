@@ -9,6 +9,9 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 
+	<link rel="stylesheet" type="text/css" href="./portfolio.css">
+
+
 
 	<title>Frontend</title>
 
@@ -33,13 +36,13 @@
 			<div class="collapse navbar-collapse" id="navmenu">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
-						<a href="#learn" class="nav-link">About Me</a>
+						<a href="#aboutme" class="nav-link">About Me</a>
 					</li>
 					<li class="nav-item">
-						<a href="#questions" class="nav-link">Projects</a>
+						<a href="#projects" class="nav-link">Projects</a>
 					</li>
 					<li class="nav-item">
-						<a href="#instructors" class="nav-link">Contacts</a>
+						<a href="#contacts" class="nav-link">Contacts</a>
 					</li>
 				</ul>
 			</div>
@@ -56,9 +59,8 @@
 			<div class="d-md-flex align-item-center">
 				<div>
 					<h1 class="mr-5">Become a <span class="text-warning">Web Developer</span></h1>	
-					<p class="justify-content-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-					<button class="btn btn-primary btn-lg mb-5">Sample</button>	
+					<p class="justify-content-center">Web developers create and maintain websites. They are also responsible for the site's technical aspects, such as its performance and capacity, which are measures of a website's speed and how much traffic the site can handle.</p>
+					<button class="btn btn-primary btn-lg mb-5">Read More</button>	
 				</div>
 				<img src="./img/img.jpg" class="img-fluid w-50 d-none d-md-block">
 			</div>
@@ -70,7 +72,7 @@
 	<section class="bg-info text-light p-2">
 			<div class="container">
 			 <div class="d-md-flex justify-content-center">
-			 	<h3 class="mb-3 mb-md-0">Projects</h3>
+			 <h3 class="mb-3 mb-md-0 text-light" id="projects">Projects</h3>
 			 	
 			 </div>
 			</div>
@@ -97,8 +99,7 @@
 								<img src="./img/logo-html5.png" class=""img-fluid>
 								</div>
 								<h3 class="card-tittle mb-3">HTML</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								<p>HTML (Hypertext Markup Language) is a text-based approach to describing how content contained within an HTML file is structured. This markup tells a web browser how to display text, images and other forms of multimedia on a webpage.
 								</p>
 								<a href="#" class="btn btn-primary">Read More</a>
 							</div>
@@ -112,8 +113,7 @@
 								<img src="./img/logo-bootstrap.png" class=""img-fluid>
 								</div>
 								<h3 class="card-tittle mb-3">Bootstrap</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								<p>Bootstrap is a free, open source front-end development framework for the creation of websites and web apps. Designed to enable responsive development of mobile-first websites, Bootstrap provides a collection of syntax for template designs.
 								</p>
 								<a href="#" class="btn btn-primary">Read More</a>
 							</div>
@@ -127,8 +127,7 @@
 								</div>
 								<img src="./img/logo-css3.png" class=""img-fluid>
 								<h3 class="card-tittle mb-3">CSS</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								<p>CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.
 								</p>
 								<a href="#" class="btn btn-primary">Read More</a>
 							</div>
@@ -146,7 +145,7 @@
 	<section class="bg-info text-light">
 			<div class="container">
 			 <div class="d-md-flex justify-content-center">
-			 	<h3 class="p-2">About Me</h3>
+			 	<h3 class="p-2" id="aboutme">About Me</h3></a>
 			 	
 			 </div>
 			</div>
@@ -170,10 +169,10 @@
 								<h3 class="card-tittle mb-3">Educational Background</h3>
 								<p>Bachelor Of Science Major
 									In Human Resource
-									Management Development
+									Management Development -
 									University Of Caloocan City
-									East Grace Park, Caloocan
-									2010-2018
+									East Grace Park, Caloocan -
+									2012-2018
 								</p>
 								<a href="#" class="btn btn-primary">Read More</a>
 							</div>
@@ -208,44 +207,57 @@
 	<section class="bg-info text-light">
 			<div class="container">
 			 <div class="d-md-flex justify-content-center">
-			 	<h3 class="pt-2">Contact Us</h3>
+			 	<h3 class="pt-2" id="contacts">Contact Us</h3>
 			 </div>
 			</div>
 	</section>
 		<!-- End BLUE BAR -->
 
+		<!-- Contact Me Start -->
+					<div class="bg-dark">
+                        <div class="container-fluid col-lg-4 col-md-8 col-sm-12 p-5 text-light text-center rounded border border-light">
+                            <form action="" class="d-flex flex-column" >
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" placeholder="Your Name" class="form-control mb-4" required autocomplete="">
+
+                                <label for="email">Email Address</label>
+                                <input type="email" name="email" id="email" placeholder="name@example.com" class="form-control mb-4" required autocomplete="">
+
+                                <label for="contact-number">Contact Number</label>
+                                <input type="text" name="contact-number" id="contact-number" placeholder="+63 900 000 0000" class="form-control mb-4" required autocomplete="">
+
+                                <label for="message">Message</label>
+                                <textarea class="form-control mb-4" name="message" id="message" rows="5"></textarea>
+
+                                <button class="btn btn-primary font-weight-bold" type="submit" data-toggle="modal" data-target="#exampleModal" >Send Email</button>
+                            </form>
+                        </div>
+                      </div> 
+                        <!-- Contact Me End -->
 
 
+		
 
-		<!-- Contact & MAP -->
+	<!-- Start Footer -->
+	<section class="row bg-dark text-light p-5 mark-5">
+		<div class="col-md border border-light">
+			<div class="text-center">
+					<p class="mb-1">Social Media Account</p>
 
-		<section class="p-5">
-			<div class="container">
-				<div class="row g-4">
-					<div class="col-md">
-						<h2 class="text center mb-4"></h2>
-						<ul class="list-group list-group-flush lead">
-							<li class="list-group-item">
-								<span class="font-weight-bold tex">Main Location :</span> Caloocan City
-							</li>
-								<li class="list-group-item">
-								<span class="font-weight-bold">Contact # : </span> +63 9235-310-516
-							</li>
-								<li class="list-group-item text-center">
-								<span class="font-weight-bold">Social Media Account</span>
-								<div><i class="bi bi-twitter text-center"></i>
-									 <i class="bi bi-facebook ml-5"></i>
-									 <i class="bi bi-instagram ml-5"></i>
+		 		<div class="text-center d-flex d-md-flex justify-content-center">
+				 <a href="https://twitter.com/home?lang=en"><i class="bi bi-twitter text-center"></i></a>
 
-								</div>
-							</li>
-						</ul>
-					</div>
+				 <a href="https://www.facebook.com/Mekotobi"><i class="bi bi-facebook ml-5 p-2"></i></a>
+
+				 <a href="https://www.instagram.com/markanthony.10/"><i class="bi bi-instagram ml-5"></i></a>
+
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>	
 
 
+			
 
 
 
