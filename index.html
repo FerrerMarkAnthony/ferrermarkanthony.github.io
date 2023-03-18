@@ -1,270 +1,568 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
 
-	<link rel="stylesheet" type="text/css" href="./portfolio.css">
+    <link rel="stylesheet" type="text/css" href="./index.css" />
 
+    <title>Frontend</title>
+  </head>
+  <body>
+    <!--================================================== START OF NAVBAR ===================================================-->
 
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top p-2">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">MARK</a>
 
-	<title>Frontend</title>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navmenu"
+          aria-controls="navmenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-</head>
-<body>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="#aboutme" class="nav-link">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a href="#gallery" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="#project" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#tools" class="nav-link">Tools</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-	<!--Start of NAVBAR -->
+    <!-- ========================================================== END OF NAVBAR ================================================= -->
 
-	 <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-1">
-		<div class="container-fluid">
+    <!-- ======================================================= START LANDING PAGE =================================================-->
 
-			<a href="#" class="navbar-brand">Frontend</a>
-			
-			<button class="navbar-toggler" 
-			type="button" 
-			data-toggle="collapse" 
-			data-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
-				
-				<span class="navbar-toggler-icon"></span>
-			</button>	
+    <div class="p-5 text-center" id="landing">
+      <div class="container-fluid min-vh-100 p-3">
+        <div class="row">
+          <div class="d-flex justify-content-center m-5">
+            <img
+              src="./img/img.jpg"
+              class="img-fluid w-50 d-none d-md-block rounded-circle display-inline-block"
+            />
+          </div>
+          <div class="col col-12">
+            <h1 class="mr-5" id="landing2">
+              Fullstack <span class="text-warning">Web Developer</span>
+            </h1>
+            <p id="landing3">
+              "Web developers create and maintain websites, and are responsible
+              for the site's technical aspects, such as its performance and
+              capacity. They ensure that the website is running smoothly, is
+              optimized for speed, and is user-friendly. Using various
+              programming languages and frameworks, web developers design and
+              build websites to meet the specific needs and goals of each
+              project."
+            </p>
+            <button type="button" class="btn btn-primary mt-5" id="landing3">
+              <a
+                href="https://drive.google.com/file/d/12Bv_4g7gQWwvqSUdNLzraxa8cJMbEo0Z/view?usp=sharing"
+                target="_blank"
+                style="color: white; text-decoration: none"
+                >DOWNLOAD CV</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-			<div class="collapse navbar-collapse" id="navmenu">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a href="#aboutme" class="nav-link">About Me</a>
-					</li>
-					<li class="nav-item">
-						<a href="#projects" class="nav-link">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a href="#contacts" class="nav-link">Contacts</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+    <!--======================================================= END OF LANDING PAGE ========================================================= -->
 
-	</nav>
-	<!-- End of NAVBAR -->
+    <!--==== ABOUT ME =====-->
 
+    <section class="container bg-success text-light p-2" id="aboutme">
+      <div class="row d-md-flex justify-content-center">
+        <div>
+          <h3 class="mb-3 mb-md-0 text-light">About Me</h3>
+        </div>
+      </div>
+    </section>
+    <!--===== End ======-->
 
-	<!-- Start of First Background -->
+    <!---==================================================== START OF PERSONAL BACKGROUND ====================================================-->
 
-	<div class="bg-dark text-light pt-3 text-center border border-light">
-		<div class="container">
-			<div class="d-md-flex align-item-center">
-				<div>
-					<h1><span class="text-warning">Hi!</span>Im Mark Anthony Ferrer,</h1>
-					<h1 class="mr-5">Become a <span class="text-warning">Web Developer</span></h1>	
-					<p class="justify-content-center">Web developers create and maintain websites. They are also responsible for the site's technical aspects, such as its performance and capacity, which are measures of a website's speed and how much traffic the site can handle.</p>
-					<button class="btn btn-primary btn-lg mb-5">Read More</button>	
-				</div>
-				<img src="./img/img.jpg" class="img-fluid w-50 d-none d-md-block">
-			</div>
-		</div>
-	</div>
-		<!-- End of First Background -->
+    <div class="container-fluid min-vh-100 p-5 mt-5" id="landing3">
+      <div class="row">
+        <div class="col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+          <div class="text-center">
+            <h2 class="display-5">Personal Information</h2>
+            <p class="lead">Name: Mark Anthony Ferrer</p>
+            <p class="lead">Age: 58</p>
+            <p class="lead">Address: Caloocan City</p>
+          </div>
+          <div class="mt-5">
+            <h2 class="display-5 text-center">Educational Background</h2>
+            <p class="lead" id="para">
+              Hi there! My name is Mark Anthony Ferrer, and I am currently
+              exploring a career shift to the IT industry. I hold a Bachelor's
+              degree in Human Resource Management Development from the
+              University of Caloocan City East Grace Park, Caloocan, which has
+              equipped me with valuable experience in talent acquisition,
+              employee engagement, and organizational development. However, my
+              love for technology and its limitless possibilities has led me to
+              take courses in web development, programming, and software
+              development. Through these courses, I've gained valuable skills in
+              coding languages like Java, JavaScript, and HTML/CSS, as well as
+              web development frameworks like React. With my experience in
+              managing people and processes, combined with my technical
+              knowledge, I believe that I can be a valuable asset to any IT
+              team. I'm eager to continue growing in the IT industry and
+              contribute to innovative and exciting projects.
+            </p>
+          </div>
+          <div class="mt-5">
+            <h2 class="display-5 text-center">Work Experience</h2>
+            <p class="lead" id="para">
+              I'm a Rate Contract Agreement & Booking Analyst at WNS Global
+              Services Inc. My responsibilities include negotiating and setting
+              up contracts between shippers and logistics providers for specific
+              lanes and time periods, as well as coordinating the reservation of
+              goods, storage space, and services provided by various suppliers.
+              Previously, I worked as a Business Center Associate at IBM, where
+              I was responsible for ensuring adequate stocks of office supplies,
+              securing documents in warehousing, and setting up meetings for
+              clients. I also have experience as a Service Crew member at
+              Jollibee Inc., where I processed payments and used selling
+              techniques to interact with customers. My duties also included
+              cleaning, maintaining stock, and serving food to customers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<!-- Start BLUE BAR -->
-	<section class="bg-info text-light p-2">
-			<div class="container">
-			 <div class="d-md-flex justify-content-center">
-			 <h3 class="mb-3 mb-md-0 text-light" id="projects">Projects</h3>
-			 	
-			 </div>
-			</div>
-	</section>
-		<!-- End BLUE BAR -->
+    <!--================================================ END OF PERSONAL BACKGROUND ==============================================-->
 
+    <!--==== GALLERY =====-->
 
-		
+    <section class="container bg-info text-light p-2" id="gallery">
+      <div class="row d-md-flex justify-content-center">
+        <div>
+          <h3 class="mb-3 mb-md-0 text-light">GALLERY</h3>
+        </div>
+      </div>
+    </section>
+    <!--===== End ======-->
 
+    <!-- ========================================== START OF GALLERY ============================================= -->
 
+    <div>
+      <div class="container-fluid p-5" id="gallery-p">
+        <div class="row justify-content-center">
+          <div class="col col-lg-7 col-md-12">
+            <p>
+              "Welcome to my gallery page! As an animal lover, I wanted to
+              showcase some of my favorite animals through photos that I have
+              taken. Two of my absolute favorites are Mekoy and Moana. Mekoy is
+              a lovable and energetic dog who has been my faithful companion for
+              several years. He loves going for walks, playing fetch, and
+              snuggling up with me on the couch. I've captured some of his
+              playful moments on camera and wanted to share them with you.
+              Moana, on the other hand, is a charming and curious pig who has
+              quickly stolen my heart. She is incredibly intelligent and loves
+              exploring new environments. I've captured some of her curious and
+              endearing moments on camera. Through these photos, I hope to
+              convey the unique personalities and quirks of these animals that
+              make them so special to me. I also believe that animals are a
+              source of inspiration for creative work and bring joy to our
+              lives, and I hope that these photos can bring a smile to your face
+              as well."
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <div class="container pb-4">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 mb-3">
+            <img src="./img/2.jpg" class="img-fluid" />
+          </div>
+          <div class="col-md-4 col-sm-12 mb-3">
+            <img src="./img/1.jpg" class="img-fluid" height="400" />
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <img src="./img/3.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
 
-		<!-- 1st -->
-		<!-- Start of the card -->
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 mb-3">
+            <img src="./img/4.jpg" class="img-fluid" />
+          </div>
+          <div class="col-md-4 col-sm-12 mb-3">
+            <img src="./img/6.jpg" class="img-fluid" />
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <img src="./img/5.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<div class="p-5 bg-dark border border-light">
-			<div class="container">
-				<div class="row text-center">
-					<div class="col-md">
-						<div class="card bg-dark text-light rounded border border-light">
-							<div class="card-body text-center">
-								<div class="h1 mb-3">
-								<div><i class="bi bi-dice-1"></i></div>	
-								<img src="./img/logo-html5.png" class=""img-fluid>
-								</div>
-								<h3 class="card-tittle mb-3">HTML</h3>
-								<p>HTML (Hypertext Markup Language) is a text-based approach to describing how content contained within an HTML file is structured. This markup tells a web browser how to display text, images and other forms of multimedia on a webpage.
-								</p>
-								<a href="#" class="btn btn-primary">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md">
-						<div class="card bg-dark text-light rounded border border-light">
-							<div class="card-body text-center">
-								<div class="h1 mb-3">
-								<div><i class="bi bi-dice-2"></i></div>	
-								<img src="./img/logo-bootstrap.png" class=""img-fluid>
-								</div>
-								<h3 class="card-tittle mb-3">Bootstrap</h3>
-								<p>Bootstrap is a free, open source front-end development framework for the creation of websites and web apps. Designed to enable responsive development of mobile-first websites, Bootstrap provides a collection of syntax for template designs.
-								</p>
-								<a href="#" class="btn btn-primary">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md">
-						<div class="card bg-dark text-light border border-light">
-							<div class="card-body text-center">
-								<div class="h1 mb-3">	
-								<i class="bi bi-dice-3"></i></i>
-								</div>
-								<img src="./img/logo-css3.png" class=""img-fluid>
-								<h3 class="card-tittle mb-3">CSS</h3>
-								<p>CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.
-								</p>
-								<a href="#" class="btn btn-primary">Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <!--======================================================= END OF GALLERY =========================================================-->
 
-		<!-- End of the Card -->
+    <!--==== PROJECTS =====-->
 
+    <section class="container bg-info text-light p-2" id="project">
+      <div class="row d-md-flex justify-content-center">
+        <div>
+          <h3 class="mb-3 mb-md-0 text-light">Projects</h3>
+        </div>
+      </div>
+    </section>
 
+    <!--===== End =======-->
 
-		<!-- Start BLUE BAR -->
-	<section class="bg-info text-light">
-			<div class="container">
-			 <div class="d-md-flex justify-content-center">
-			 	<h3 class="p-2" id="aboutme">About Me</h3></a>
-			 	
-			 </div>
-			</div>
-	</section>
-		<!-- End BLUE BAR -->
+    <!--===================================================== START OF PROJECTS ==================================================-->
 
+    <!-- Carousel Section Start -->
+    <div class="min-vh-100 row d-md-block mt-md-5 p-5">
+      <div class="offset-xl-3 col-xl-6">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleCaptions"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://place-puppy.com/500x300"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Coming Soon</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="http://placekitten.com/500/300"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Coming Soon</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://placebear.com/500/300"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Coming Soon</h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="mt-5" id="gallery-p">
+          <p>
+            "I'm excited to announce my upcoming project, which will be a
+            dynamic and user-friendly e-commerce website. The website will
+            feature a modern and intuitive design that is optimized for both
+            desktop and mobile devices. It will also include advanced search and
+            filter options, secure payment processing, and a seamless checkout
+            process. I'll be using the latest web development technologies, such
+            as React and Node.js, to ensure that the website is fast, efficient,
+            and scalable. I'm committed to delivering a high-quality website
+            that meets the specific needs and goals of my client. Stay tuned for
+            updates on this exciting project!"
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel Section End -->
 
+    <!--======================================================= END OF PROJECTS ============================================================-->
 
-				<!-- 2nd -->
-		<!-- Start of the card -->
+    <!--========== TOOLS ==========-->
 
-		<div class="p-5 bg-dark border border-light">
-			<div class="container">
-				<div class="row text-center">
-					<div class="col-md">
-						<div class="card bg-dark text-light rounded border border-light">
-							<div class="card-body text-center">
-								<div class="h1 mb-3">
-								<div><i class="bi bi-textarea-resize"></i></div>
-								</div>
-								<h3 class="card-tittle mb-3">Educational Background</h3>
-								<p>Bachelor Of Science Major
-									In Human Resource
-									Management Development -
-									University Of Caloocan City
-									East Grace Park, Caloocan -
-									2012-2018
-								</p>
-								<a href="#" class="btn btn-primary">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md">
-						<div class="card bg-dark text-light rounded border border-light">
-							<div class="card-body text-center">
-								<div class="h1 mb-3">
-								<div><i class="bi bi-tv"></i></div>
-								</div>
-								<h3 class="card-tittle mb-3">Experience in Work</h3>
-								<ul class="">
-								  <li>Rate Contract Agreement & Booking Analyst
-								ONE - WNS Global Services Inc.</li>
+    <section class="container bg-success text-light p-2" id="tools">
+      <div class="row d-md-flex justify-content-center">
+        <div>
+          <h3 class="mb-3 mb-md-0 text-light">Tools</h3>
+        </div>
+      </div>
+    </section>
 
-								  <li>Business Center Associate -
-												IBM</li>
-								</ul>
-								<a href="#" class="btn btn-primary">Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <!--======== End =========-->
 
-		<!-- End of the Card -->	
+    <!-- Core Tools Section Start -->
+    <div class="min-vh-100 mt-5 p-lg-5">
+      <div class="d-flex flex-column">
+        <div class="d-flex flex-row justify-content-center">
+          <img width="150" src="img/logo-html5.png" />
+        </div>
+        <div class="d-flex flex-row mb-5 justify-content-center">
+          <img width="150" src="img/logo-css3.png" />
+          <img width="150" src="img/logo-javascript.png" />
+        </div>
+      </div>
+      <!-- Core Tools Section End -->
 
+      <!-- Other Tools Section Start -->
 
-			<!-- Start BLUE BAR -->
-	<section class="bg-info text-light">
-			<div class="container">
-			 <div class="d-md-flex justify-content-center">
-			 	<h3 class="pt-2" id="contacts">Contact Us</h3>
-			 </div>
-			</div>
-	</section>
-		<!-- End BLUE BAR -->
+      <div
+        class="d-flex flex-row flex-md-column flex-wrap justify-content-center align-items-md-center"
+      >
+        <div class="d-flex flex-column flex-md-row flex-wrap">
+          <img width="150" src="img/logo-mongodb.png" />
+          <img width="150" src="img/logo-nodejs.png" />
+          <img width="150" src="img/logo-expressjs.png" />
+          <img width="150" src="img/logo-react.png" />
+          <img width="150" src="img/logo-heroku.png" />
+        </div>
+        <div class="d-flex flex-column flex-md-row flex-wrap mb-5">
+          <img width="150" src="img/logo-git.png" />
+          <img width="150" src="img/logo-sublime-text-3.png" />
+          <img width="150" src="img/logo-postman.png" />
+          <img width="150" src="img/logo-gitlab-ci-cd.png" />
+        </div>
+      </div>
+      <!-- Other Tools Section End -->
+    </div>
+    <!--============ Start CONTACT BLUE BAR ============-->
 
-		<!-- Contact Me Start -->
-					<div class="bg-dark">
-                        <div class="container-fluid col-lg-4 col-md-8 col-sm-12 p-5 text-light text-center rounded border border-light">
-                            <form action="" class="d-flex flex-column" >
-                                <label for="name">Name</label>
-                                <input type="text" name="name" id="name" placeholder="Your Name" class="form-control mb-4" required autocomplete="">
+    <section class="container bg-info text-light p-2" id="contact">
+      <div class="row d-md-flex justify-content-center">
+        <div>
+          <h3 class="mb-3 mb-md-0 text-light">Contact</h3>
+        </div>
+      </div>
+    </section>
 
-                                <label for="email">Email Address</label>
-                                <input type="email" name="email" id="email" placeholder="name@example.com" class="form-control mb-4" required autocomplete="">
+    <!--================= End CONTACT BLUE BAR ================-->
 
-                                <label for="contact-number">Contact Number</label>
-                                <input type="text" name="contact-number" id="contact-number" placeholder="+63 900 000 0000" class="form-control mb-4" required autocomplete="">
+    <!-- Contact Form Section Start -->
+    <!-- <div class="min-vh-100 p-5 text-center">
+      <h2 class="text-light">Contact Me</h2>
 
-                                <label for="message">Message</label>
-                                <textarea class="form-control mb-4" name="message" id="message" rows="5"></textarea>
+      <div class="row mt-3">
+        <form
+          class="col-12 offset-md-2 col-md-8 offset-xl-4 col-xl-4 bg-info p-3 rounded"
+        >
+          <div class="form-group">
+            <label class="text-light" for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="form-group">
+            <label class="text-light" for="email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="form-group">
+            <label class="text-light" for="contact">Contact Number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="contact"
+              placeholder="+63 900 000 0000"
+            />
+          </div>
+          <div class="form-group">
+            <label class="text-light" for="concern">Concern</label>
+            <select class="form-control" id="concern">
+              <option>Quotation</option>
+              <option>Appointment</option>
+              <option>Follow-Up</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="text-light" for="message">Message</label>
+            <textarea class="form-control" id="message" rows="7"></textarea>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-dark"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            Send Email
+          </button>
+        </form>
+      </div>
+    </div> -->
 
-                                <button class="btn btn-primary font-weight-bold" type="submit" data-toggle="modal" data-target="#exampleModal" >Send</button>
-                            </form>
-                        </div>
-                      </div> 
-                        <!-- Contact Me End -->
+    <div class="container-fluid p-5 min-vh-100 mt-5" id="contact2">
+      <div class="row justify-content-center">
+        <div class="col col-md-8 col-lg-6">
+          <div class="col mb-5">
+            <p>
+              Please feel free to reach out to me to discuss potential projects
+              or collaborations. I am always excited to take on new challenges
+              and help bring innovative ideas to life.
+            </p>
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Contact Number</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="+63 900 000 0000"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Message</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="10"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+        <!-- ==== -->
+        <div class="col col-md-12 mt-5 p-5">
+          <div class="text-center" id="foot">
+            <p class="mb-3">Social Media Account</p>
 
+            <div class="text-center d-flex d-md-flex justify-content-center">
+              <a href="https://twitter.com/home?lang=en" target="_blank"
+                ><i class="bi bi-twitter text-center"></i
+              ></a>
 
-		
+              <a href="https://www.facebook.com/Mekotobi" target="_blank"
+                ><i class="bi bi-facebook ml-5 p-2"></i
+              ></a>
 
-	<!-- Start Footer -->
-	<section class="row bg-dark text-light p-5 mark-5">
-		<div class="col-md border border-light">
-			<div class="text-center">
-					<p class="mb-1">Social Media Account</p>
+              <a
+                href="https://www.instagram.com/markanthony.10/"
+                target="_blank"
+                ><i class="bi bi-instagram ml-5"></i
+              ></a>
 
-		 		<div class="text-center d-flex d-md-flex justify-content-center">
-				 <a href="https://twitter.com/home?lang=en" target="_blank"><i class="bi bi-twitter text-center"></i></a>
+              <a
+                href="https://www.linkedin.com/in/mark-anthony-ferrer-b9b55225b/"
+                target="_blank"
+                ><i class="bi bi-linkedin ml-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- ===== -->
+      </div>
+    </div>
 
-				 <a href="https://www.facebook.com/Mekotobi" target="_blank"><i class="bi bi-facebook ml-5 p-2"></i></a>
+    <!-- Contact Form Section End -->
 
-				 <a href="https://www.instagram.com/markanthony.10/" target="_blank"><i class="bi bi-instagram ml-5"></i></a>
+    <!--======================================================== START OF FOOTER ===============================================-->
 
-				</div>
-			</div>
-		</div>
-	</section>	
+    <section class="bg-dark">
+      <footer class="py-4 my-4">2023 | All rights reserved.</footer>
+    </section>
 
+    <!--========================================================== END OF FOOTER =================================================-->
 
-			
-
-
-
-
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
