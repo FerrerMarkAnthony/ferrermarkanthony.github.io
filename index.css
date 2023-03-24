@@ -143,6 +143,24 @@ body {
   color: #765c3d;
 }
 
+#contact2 .form-group {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #765c3d;
+}
+
+#contact2 .btn {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: white;
+}
+
 /* FOOTER */
 
 #foot {
